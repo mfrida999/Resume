@@ -1,0 +1,196 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Large \scshape Frida Maria Moreno} \\ \vspace{1pt}
+    \href{mailto:mfrida999@gmail.com}{mfrida999@gmail.com} $|$ \small 805-300-8722 $|$ 
+    \href{https://linkedin.com/in/frida-moreno}{linkedin.com/in/frida-moreno} $|$
+    \href{https://github.com/mfrida999}{github.com/mfrida999} $|$
+    \small U.S. Citizen
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {California Institute of Technology}{September 2022 -- June 2026}
+      {Bachelor of Science in Computer Science, 3.70 GPA}{Pasadena, CA}
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Los Alamos National Laboratory}{June 2026 -- Present}
+      {Weapons Research Services Post-Baccalaureate}{Los Alamos, NM}
+      \resumeItemListStart
+        \resumeItem{Developed end-to-end, multi-VLM OCR pipeline for extracting structured tabular data from legacy documents, using OpenAI, Anthropic, Google, and NVIDIA models}
+        \resumeItem{Designed and evaluated consensus-driven table detection strategies, including unanimous, majority, and model-specific voting, to identify table-containing pages and improve extraction reliability}
+        \resumeItem{Conducted uncertainty evaluations using Gestalt pattern matching and Levenshtein distance to assess OCR extraction consistency and accuracy}
+      \resumeItemListEnd
+    
+    \resumeSubheading
+      {BMW Group}{January 2026 -- June 2026}
+      {UX Engineer Full-time Intern, Intelligent Car Team}{Mountain View, CA}
+      \resumeItemListStart
+        \resumeItem{Created Unity-based prototype assets to explore the Kirameki effect for automotive applications}
+        \resumeItem{Extended a generative UI demo using A2UI, LangChain, and LangGraph to explore dynamic interfaces for improving AI-driven user experiences}
+        \resumeItem{Developed iOS data extraction workflows across Photos, Calendar, Reminders, and Location apps to uncover user-behavioral insights and support personalized in-car experiences}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Los Alamos National Laboratory}{June 2025 -- December 2025}
+      {Weapons Research Services Intern (WRS-WMT)}{Los Alamos, NM \& Remote}
+      \resumeItemListStart
+        \resumeItem{Developed OCR workflow to detect and extract tabular data from scanned historical documents using a computer vision approach with YOLOv8 and OpenAI's ChatGPT-4o API}
+        \resumeItem{Assessed text recognition capabilities and limitations of state-of-the-art OCR tools like Tesseract, Donut, Idefics2, and DocTR. Compiled results into a report}
+        \resumeItem{Experimented with pre-processing techniques such as traditional deskew/cropping/resizing/grayscale, Otsu's Method, Hough Transform, and Gaussian blur}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+      {Squack.io (now Relace)}{June 2024 -- August 2024}
+      {Frontend Software Engineer Intern}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Developed responsive front-end landing page for Flare --- a designer clothing cross-listing platform that AI generates accurate item descriptions based on user input text/images}
+        \resumeItem{Replicated ChatGPT-4o's classification functionality to improve proactive interference issues, ironic rebound, and output ``hallucinations"}
+        \resumeItem{Developed front-end landing page for Flux --- a confidence aware zero-shot task classifier with enhanced classification performance compared to traditional Bert/GPT-4o classifiers}
+        \resumeItem{Summer 2024 YC Pioneer Internship Program member}
+      \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Personal Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Arduino-Powered Paint Mixer}} {January 2025 -- March 2025}
+          \resumeItemListStart
+            \resumeItem{Automated custom CYMK-based paint mixer powered by Arduino Nano \href{https://hackaday.io/project/202338-color-by-code}{(Click here for Project Log)}}
+            \resumeItem{Project featured by Arduino and MicroChip Makes on Linkedin \href{https://blog.arduino.cc/2025/03/25/this-arduino-nano-every-controlled-machine-automatically-mixes-acrylic-paint-of-any-color/}{(Click here to read Arduino's article)}}
+          \resumeItemListEnd
+
+        \resumeProjectHeading
+          {\textbf{Physics Engine Slime Game}} {April 2023}
+          \resumeItemListStart
+            \resumeItem{Navigated POSIX APIs combined with physics-centered code (ie Newton’s Laws of Motion, Kinematics, Gravity, Collision
+Detection/Response, Projectile Motion, Oscillation, and Momentum) to develop a large software deliverable \href{https://mfrida999.github.io/mfrida999.github.io-slime/}{(Click here for interactive GitHub repo)}}
+            \resumeItem{Led the game level respawn check-points, player mass decrease/ increase with mass pick-ups, and one-way gravity between
+user and mass-pickups}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, HTML/CSS, MySQL, JavaScript and TypeScript} \\
+     %textbf{Developer Tools}{: Git, Docker, }
+     \textbf{Spoken Languages}{: Spanish (Native), English (Fluent)}
+    }}
+ \end{itemize}
+ 
+%-------------------------------------------
+\end{document}
